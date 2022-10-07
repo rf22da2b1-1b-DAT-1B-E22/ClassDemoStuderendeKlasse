@@ -26,6 +26,29 @@ UdskrivStuderende(studerende2); //udskriv 4
 
 
 
+// Laver en ny skoleklasse
+SkoleKlasse klasse = new SkoleKlasse();
+
+
+klasse.AddStuderende(studerende1);
+klasse.AddStuderende(studerende2);
+
+Studerende findStuderende = klasse.FindStuderende("DAT3322");
+Console.WriteLine(findStuderende);
+
+findStuderende = klasse.FindStuderende("FindesIkke");
+Console.WriteLine(findStuderende);
+
+Console.WriteLine(klasse); // hele klassen
+
+Studerende slettet = klasse.SletStuderende("DAT3322");
+Console.WriteLine("Denne studerende er slettet " + slettet);
+Console.WriteLine("hele klassen");
+Console.WriteLine(klasse); // hele klassen
+
+
+
+
 
 
 

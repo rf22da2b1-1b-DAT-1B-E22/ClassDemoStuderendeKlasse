@@ -31,13 +31,18 @@ namespace ClassDemoStuderendeKlasse
 
         }
 
-        public Studerende(String Id, String FNavn, String ENavn, String Uddannel)
+        public Studerende(String Id, String FNavn, String ENavn, String uddannelse)
         {
             StudieId = Id;
             Fornavn = FNavn;    
             Efternavn = ENavn;
-            Uddannelse = Uddannel;
+            Uddannelse = uddannelse;
         }
 
+
+        public override string ToString()
+        {
+            return $"StudieId={StudieId}, Fornavn={Fornavn}, Efternavn={Efternavn}, Uddannelse={Uddannelse} ";
+        }
     }
 }
